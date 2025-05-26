@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Klik tombol berikut untuk menampilkan prompt</p>
+    <button onclick="myFunction()">Klik Disini</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        var x;
+        var nama = prompt("Silahkan masukkan nama anda", "Achmad Reihan Alfaiz");
+        if (nama != null && nama != "") {
+          x = "Selamat Datang " + nama + " bagaimana kabar anda hari ini?";
+          document.getElementById("demo").innerHTML = x;
+        } else if (nama == "") {
+          x = "Anda tidak memasukkan nama.";
+          document.getElementById("demo").innerHTML = x;
+        } else {
+          x = "Anda membatalkan input.";
+          document.getElementById("demo").innerHTML = x;
+        }
+      }
+    </script>
+  </body>
+</html>
