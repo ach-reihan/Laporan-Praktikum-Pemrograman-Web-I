@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JPhotography - Portofolio</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="PRAK601-2410817210019-AchmadReihanAlfaiz.css"
+    />
+  </head>
+  <body>
+    <!-- Siku di setiap pojok layar, kombinasi Bootstrap utility dan sedikit CSS -->
+    <div>
+      <div
+        class="position-fixed top-0 start-0"
+        style="width: 60px; height: 60px; z-index: 9999; pointer-events: none"
+      >
+        <div
+          class="bg-dark position-absolute top-0 start-0"
+          style="width: 60px; height: 8px"
+        ></div>
+        <div
+          class="bg-dark position-absolute top-0 start-0"
+          style="width: 8px; height: 60px"
+        ></div>
+      </div>
+      <div
+        class="position-fixed top-0 end-0"
+        style="width: 60px; height: 60px; z-index: 9999; pointer-events: none"
+      >
+        <div
+          class="bg-dark position-absolute top-0 end-0"
+          style="width: 60px; height: 8px"
+        ></div>
+        <div
+          class="bg-dark position-absolute top-0 end-0"
+          style="width: 8px; height: 60px"
+        ></div>
+      </div>
+      <div
+        class="position-fixed bottom-0 start-0"
+        style="width: 60px; height: 60px; z-index: 9999; pointer-events: none"
+      >
+        <div
+          class="bg-dark position-absolute bottom-0 start-0"
+          style="width: 60px; height: 8px"
+        ></div>
+        <div
+          class="bg-dark position-absolute bottom-0 start-0"
+          style="width: 8px; height: 60px"
+        ></div>
+      </div>
+      <div
+        class="position-fixed bottom-0 end-0"
+        style="width: 60px; height: 60px; z-index: 9999; pointer-events: none"
+      >
+        <div
+          class="bg-dark position-absolute bottom-0 end-0"
+          style="width: 60px; height: 8px"
+        ></div>
+        <div
+          class="bg-dark position-absolute bottom-0 end-0"
+          style="width: 8px; height: 60px"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-4 fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">JPhotography</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center py-5 bg-white">
+      <div class="container">
+        <h3>Hi. Hello.. I Am JohnDas...!</h3>
+        <h3>I Travel Around The World To Get The Best Photos.!</h3>
+        <p class="sub-text">
+          AWARD WINNING PHOTOGRAPHER / CINEMATOGRAPHER / WRITER
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section id="portfolio" class="gallery-filter">
+      <div class="container">
+        <ul class="nav nav-pills justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">All</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Landscape</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portrait</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Product</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="image-gallery">
+      <div class="container">
+        <div class="row gallery-section">
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/amsterdam.jpg"
+              alt="Gallery Image 1"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/silicon-valley.jpeg"
+              alt="Gallery Image 2"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="/images/bandung.jpg"
+              alt="Gallery Image 3"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/redmond.jpg"
+              alt="Gallery Image 4"
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/bruges.jpg"
+              alt="Gallery Image 5"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/san-francisco.jpg"
+              alt="Gallery Image 6"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/lembang.jpeg"
+              alt="Gallery Image 7"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/seattle.jpg"
+              alt="Gallery Image 8"
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/amazon-river.webp"
+              alt="Gallery Image 9"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/pacific-coast-highway.jpg"
+              alt="Gallery Image 10"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/alpen-mountain.webp"
+              alt="Gallery Image 11"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/lake-washington.jpg"
+              alt="Gallery Image 12"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/london.jpg"
+              alt="Gallery Image 13"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/new-york-city.jpg"
+              alt="Gallery Image 14"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/berlin.jpg"
+              alt="Gallery Image 15"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-3 gallery-item">
+            <img
+              src="images/toronto.jpg"
+              alt="Gallery Image 16"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="contact" class="footer text-center bg-white border-top">
+      <div class="container">
+        <h3 class="">JPhotography</h3>
+        <p>© Copyrights 2019. All Rights Reserved.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Dribbble"
+            ><i class="fa-brands fa-dribbble"></i
+          ></a>
+          <a href="#" aria-label="Behance"
+            ><i class="fa-brands fa-behance"></i
+          ></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="Facebook"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="#" aria-label="Twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS Bundle CDN (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Inline JavaScript untuk navigasi dan filter gallery -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // --- NAVIGASI NAVBAR ---
+        // Mengambil semua link navbar
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+        // Menambahkan event listener pada setiap link navbar
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Hapus kelas active dari semua link
+            navLinks.forEach((item) => {
+              item.classList.remove("active");
+              item.removeAttribute("aria-current");
+            });
+
+            // Tambahkan kelas active ke link yang diklik
+            this.classList.add("active");
+            this.setAttribute("aria-current", "page");
+
+            // Ambil target dari href link
+            const targetId = this.getAttribute("href");
+
+            // Smooth scroll ke target
+            if (targetId === "#home" || targetId === "#about") {
+              // Untuk Home dan About, scroll ke atas halaman
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            } else if (targetId === "#portfolio") {
+              // Untuk Portfolio, scroll ke bagian gallery filter
+              const portfolioSection = document.getElementById("portfolio");
+              if (portfolioSection) {
+                portfolioSection.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }
+            } else if (targetId === "#contact") {
+              // Untuk Contact, scroll ke footer
+              const footer = document.querySelector("footer");
+              if (footer) {
+                footer.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }
+            }
+
+            // Update URL tanpa reload halaman
+            history.pushState(null, null, targetId);
+          });
+        });
+
+        // --- FILTER GALLERY ---
+        // Mengambil semua link filter
+        const filterLinks = document.querySelectorAll(
+          ".gallery-filter .nav-link"
+        );
+
+        // Mengambil semua item gallery
+        const galleryItems = document.querySelectorAll(".gallery-item");
+
+        // Menambahkan event listener untuk setiap link filter
+        filterLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Menghapus kelas active dari semua link filter
+            filterLinks.forEach((item) => {
+              item.classList.remove("active");
+              // Pastikan tidak ada styling default dari Bootstrap
+              item.style.backgroundColor = "transparent";
+              item.style.borderColor = "transparent";
+            });
+
+            // Menambahkan kelas active ke link yang diklik
+            this.classList.add("active");
+            // Pastikan menggunakan style yang diinginkan
+            this.style.backgroundColor = "transparent";
+            this.style.color = "#212121";
+            this.style.borderColor = "#cccccc";
+
+            // Mendapatkan kategori yang dipilih
+            const filter = this.textContent?.trim().toLowerCase();
+
+            // Filter gallery berdasarkan kategori
+            if (filter === "all") {
+              // Jika filter adalah 'all', tampilkan semua item
+              galleryItems.forEach((item) => {
+                item.style.display = "block";
+              });
+            } else {
+              // Selain itu, tampilkan hanya item yang sesuai kategori
+              galleryItems.forEach((item) => {
+                // Untuk tujuan demo, digunakan pembagian sederhana berdasarkan indeks
+                // Mendapatkan indeks dari item dalam nodeList
+                const index = Array.prototype.indexOf.call(galleryItems, item);
+
+                if (filter === "landscape" && index % 3 === 0) {
+                  item.style.display = "block";
+                } else if (filter === "portrait" && index % 3 === 1) {
+                  item.style.display = "block";
+                } else if (filter === "product" && index % 3 === 2) {
+                  item.style.display = "block";
+                } else {
+                  item.style.display = "none";
+                }
+              });
+            }
+          });
+        });
+
+        // --- AKTIVASI LINK BERDASARKAN POSISI SCROLL ---
+        window.addEventListener("scroll", function () {
+          // Mendapatkan posisi scroll
+          const scrollPosition = window.scrollY + 100; // Offset untuk navbar
+
+          // Tinggi halaman
+          const pageHeight = document.body.scrollHeight;
+
+          // Mendapatkan posisi elemen penting
+          const heroSection = document.querySelector(".hero-section");
+          const portfolioSection = document.getElementById("portfolio");
+          const footer = document.querySelector("footer");
+
+          // Tentukan bagian mana yang aktif
+          if (
+            scrollPosition <
+            heroSection?.offsetHeight + heroSection?.offsetTop
+          ) {
+            // Aktifkan link Home jika di bagian hero
+            setActiveNavLink("#home");
+          } else if (
+            portfolioSection &&
+            scrollPosition >= portfolioSection.offsetTop &&
+            scrollPosition < (footer?.offsetTop || pageHeight)
+          ) {
+            // Aktifkan link Portfolio jika di bagian portfolio
+            setActiveNavLink("#portfolio");
+          } else if (footer && scrollPosition >= footer.offsetTop) {
+            // Aktifkan link Contact jika di bagian footer
+            setActiveNavLink("#contact");
+          }
+        });
+
+        // Fungsi untuk mengatur link navbar aktif
+        function setActiveNavLink(targetId) {
+          const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            link.removeAttribute("aria-current");
+
+            if (link.getAttribute("href") === targetId) {
+              link.classList.add("active");
+              link.setAttribute("aria-current", "page");
+            }
+          });
+        }
+
+        // Aktifkan filter "All" secara default
+        document.querySelector(".gallery-filter .nav-link.active").click();
+      });
+    </script>
+  </body>
+</html>
